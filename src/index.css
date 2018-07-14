@@ -1,0 +1,35 @@
+@import url(//db.onlinewebfonts.com/c/c862d8098ce50a7dc042ebbb9b94bbc8?family=TwCenW01-Medium);
+@font-face {font-family: "TwCenW01-Medium";
+  src: url("//db.onlinewebfonts.com/t/c862d8098ce50a7dc042ebbb9b94bbc8.eot");
+  src: url("//db.onlinewebfonts.com/t/c862d8098ce50a7dc042ebbb9b94bbc8.eot?#iefix") format("embedded-opentype"),
+  url("//db.onlinewebfonts.com/t/c862d8098ce50a7dc042ebbb9b94bbc8.woff2") format("woff2"),
+  url("//db.onlinewebfonts.com/t/c862d8098ce50a7dc042ebbb9b94bbc8.woff") format("woff"),
+  url("//db.onlinewebfonts.com/t/c862d8098ce50a7dc042ebbb9b94bbc8.ttf") format("truetype"),
+  url("//db.onlinewebfonts.com/t/c862d8098ce50a7dc042ebbb9b94bbc8.svg#TwCenW01-Medium") format("svg");
+}
+html:root{
+  font-size: 62.5%
+}
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+body, main, section, article, header, p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  font-family: "TwCenW01-Medium", Arial, sans-serif;
+}
+a, a:visited, a:active, a:link {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+}
+input {
+  color: inherit;
+  font-size: inherit;
+}
+button:focus{
+  border: 0;
+  outline: 0;
+}

@@ -1,0 +1,4 @@
+.section-cart .header, .section-store .header, .section-order .header {
+    background: #000;
+    box-shadow: 0.2rem 0.2rem 1rem rgba(0,0,0,.2);
+}

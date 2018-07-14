@@ -1,0 +1,132 @@
+.section-order {
+  width: 100%;
+  height: 100vh;
+  padding-top: 6rem;
+  position: relative;
+}
+.order {
+  width: 75.7%;
+  margin: 0 auto;
+  height: 90vh;
+  position: relative;
+}
+.order__form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  font-size: 1.78em;
+}
+.order__form-group {
+  width: 100%;
+  height: 4.9rem;
+  position: relative;
+  overflow: hidden;
+}
+.order__form-group:not(:last-child) {
+  margin-bottom: 2rem;
+}
+.order__form-control {
+  width: 100%;
+  border: 0;
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  padding: 1rem;
+  border-bottom: 1px solid #000;
+}
+.order__form-control + label {
+  position: absolute;
+  top: 1rem;
+  left: 0;
+  padding-left: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+.order__form-control:focus {
+  border: 0;
+  outline: 0;
+  border-bottom: 1px solid #000;
+}
+.order__form-control:focus + label {
+  top: -2rem;
+}
+.input-focused label {
+  top: -2rem;
+}
+.order__form-group:last-child {
+  text-align: end;
+}
+.place-order {
+  text-align: center;
+  border: 0;
+  background: #000;
+  color: #fff;
+  padding: 1.3rem 3rem;
+  border-radius: 2.5rem;
+  font-size: inherit;
+  font-family: inherit;
+  cursor: pointer;
+}
+.place-order:hover {
+  border: 2px solid #000;
+  background: #fff;
+  color: #000;
+}
+.waiting {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.8);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.waiting .loader {
+  bottom: 50%;
+  transform: translate(-50%, 50%);
+}
+@media screen and (max-width: 769px) {
+  .order__form {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 426px) {
+  .order {
+    width: 100%;
+  }
+  .order__form {
+    width: 75%;
+  }
+  .order__form-group:last-child {
+    text-align: center;
+  }
+  .order-option {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 98;
+    background: rgba(255, 255, 255, 0.8);
+  }
+  .order-option .options {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 23rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    padding: 6vw;
+    background: #fff;
+    font-size: 4rem;
+    text-align: center;
+    box-shadow: 0.1rem 0.2rem 2rem 0.1rem rgba(0, 0, 0, 0.1);
+  }
+  .options a {
+    display: inline-block;
+    padding: 3vw;
+    margin: 3vw;
+  }
+}
