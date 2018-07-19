@@ -1,6 +1,6 @@
 # sotastickers
 
-Simple E-commerce App for SOTA Stickers
+Simple E-commerce App for SOTA Stickers built with ReactJS and Redux
 
 
 ## Running
