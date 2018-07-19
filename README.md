@@ -2,6 +2,7 @@
 
 Simple E-commerce App for SOTA Stickers built with ReactJS and Redux
 
+Visit https://sotasticker.netlify.com
 
 ## Running
 
