@@ -16,10 +16,6 @@ class Order extends Component {
     l_name: "",
     w_number: "",
     address: "",
-    f_nameInput: false,
-    l_nameInput: false,
-    w_numberInput: false,
-    addressInput: false,
     requesting: false,
     screenWidth: "",
     option: false
@@ -61,10 +57,6 @@ class Order extends Component {
 
   render() {
     let {
-      f_nameInput,
-      l_nameInput,
-      w_numberInput,
-      addressInput,
       f_name,
       l_name,
       w_number,
@@ -82,7 +74,7 @@ class Order extends Component {
           <form className="order__form">
             <div
               className={`order__form-group ${
-                f_nameInput || f_name.length > 0 ? `input-focused` : ``
+                f_name.length > 0 ? `input-focused` : ``
               }`}
             >
               <input
@@ -94,15 +86,13 @@ class Order extends Component {
                 onChange={({ target }) =>
                   this.updateState("f_name", target.value)
                 }
-                onFocus={() => this.updateState("", true)}
-                onBlur={() => this.updateState("", false)}
               />
               <label htmlFor="firstname">First Name</label>
               <div className="under-line" />
             </div>
             <div
               className={`order__form-group ${
-                l_nameInput || l_name.length > 0 ? `input-focused` : ``
+                l_name.length > 0 ? `input-focused` : ``
               }`}
             >
               <input
@@ -114,15 +104,13 @@ class Order extends Component {
                 onChange={({ target }) =>
                   this.updateState("l_name", target.value)
                 }
-                onFocus={() => this.updateState("l_nameInput", true)}
-                onBlur={() => this.updateState("l_nameInput", false)}
               />
               <label htmlFor="lastname">Last Name</label>
               <div className="under-line" />
             </div>
             <div
               className={`order__form-group ${
-                w_numberInput || w_number.length > 0 ? `input-focused` : ``
+                w_number.length > 0 ? `input-focused` : ``
               }`}
             >
               <input
@@ -134,15 +122,13 @@ class Order extends Component {
                 onChange={({ target }) =>
                   this.updateState("w_number", target.value)
                 }
-                onFocus={() => this.updateState("w_numberInput", true)}
-                onBlur={() => this.updateState("w_numberInput", false)}
               />
               <label htmlFor="whatsapp">WhatsApp Number</label>
               <div className="under-line" />
             </div>
             <div
               className={`order__form-group ${
-                addressInput || address.length > 0 ? `input-focused` : ``
+                address.length > 0 ? `input-focused` : ``
               }`}
             >
               <input
@@ -154,8 +140,6 @@ class Order extends Component {
                 onChange={({ target }) =>
                   this.updateState("address", target.value)
                 }
-                onFocus={() => this.updateState("addressInput", true)}
-                onBlur={() => this.updateState("addressInput", false)}
               />
               <label htmlFor="address">Address</label>
               <div className="under-line" />
