@@ -51,6 +51,7 @@ export default class Summary extends Component {
             }}
             className="summary__action"
           >
+          <i className="fas fa-shopping-cart"></i>
             Checkout
           </button>
         </div>

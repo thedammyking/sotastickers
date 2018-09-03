@@ -56,6 +56,9 @@ export default class Item extends Component {
               <label htmlFor="item__qty">Qty:</label>
               <input
                 value={this.state.qty}
+                onBlur={({ target }) => {
+                  if (!target.value) return this.changeQuantity(1);
+                }}
                 onChange={({ target }) => {
                   let value = parseInt(target.value, 10);
                   if (isNaN(value)) {

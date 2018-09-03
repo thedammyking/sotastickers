@@ -193,6 +193,10 @@
 .item__size:hover::after {
   display: block;
 }
+
+.summary__action i {
+  margin-right: 1rem;
+}
 @media screen and (max-width: 1025px) {
   .cart__container {
     width: 90%;
@@ -225,6 +229,7 @@
   }
   .item {
     height: auto;
+    z-index: 1;
   }
   .item__img-box {
     display: none;
@@ -256,6 +261,7 @@
     padding: 0;
     top: initial;
     bottom: 0;
+    z-index: 10;
   }
   .summary__title {
     display: none;
@@ -280,7 +286,7 @@
     bottom: initial;
     width: initial;
     transform: initial;
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
     margin-left: 10%;
   }
 }
